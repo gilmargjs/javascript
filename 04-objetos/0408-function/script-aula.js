@@ -56,32 +56,32 @@
 // ul.ativo('ativar');
 
 
-const frutas = ['Uva', 'Maçã', 'Banana'];
+// const frutas = ['Uva', 'Maçã', 'Banana'];
 
-Array.prototype.pop.call(frutas);
-frutas.pop();
+// Array.prototype.pop.call(frutas);
+// frutas.pop();
 
-const arrayLike = {
-  0: 'Item 1',
-  1: 'Item 2',
-  2: 'Item 3',
-  length: 3,
-}
+// const arrayLike = {
+//   0: 'Item 1',
+//   1: 'Item 2',
+//   2: 'Item 3',
+//   length: 3,
+// }
 
-const li = document.querySelectorAll('li');
-const arrayLi = Array.from(li);
+// const li = document.querySelectorAll('li');
+// const arrayLi = Array.from(li);
 
-const filtro = Array.prototype.filter.bind(li, (item) => {
-  return item.classList.contains('ativo');
-})
+// const filtro = Array.prototype.filter.bind(li, (item) => {
+//   return item.classList.contains('ativo');
+// })
 
-console.log(filtro());
+// console.log(filtro());
 
-console.log(li)
+// console.log(li)
 
-const numeros = [33,232, 33,434,54,5424, 4];
+// const numeros = [33,232, 33,434,54,5424, 4];
 
-const $ = document.querySelectorAll.bind(document);
+// const $ = document.querySelectorAll.bind(document);
 
 
 const carro = {
@@ -100,4 +100,9 @@ const acelerarHonda = carro.acelerar.bind(honda, 100);
 
 console.log(acelerarHonda(30))
 
-// console.log(carro)
+console.log(carro)
+
+function area(a, b, c) {
+  return a * b * c;
+}
+console.log(area(2.5, 3, 25.00));

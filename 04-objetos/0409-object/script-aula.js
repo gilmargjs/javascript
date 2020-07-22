@@ -96,16 +96,30 @@
 // console.log(carro)
 // console.log(Object.isFrozen(carro))
 
-const frutas = ['Banana', 'Uva'];
-const frase = 'Oi frase';
-const somar = function(a, b) {
-  return a + b;
-};
+// const frutas = ['Banana', 'Uva'];
+// const frase = 'Oi frase';
+// const somar = function(a, b) {
+//   return a + b;
+// };
 
-const carro = {
-  marca: 'Ford'
+// const carro = {
+//   marca: 'Ford'
+// }
+
+// console.log(frutas.toString());
+
+// console.log(Object.prototype.toString.call(somar));
+
+const pessoa = {
+nome:'gilmar',
+sobreNome:'josé',
+  nomeCompleto() {
+    return`${this.nome} seu sobreNome é ${this.sobreNome} da silva`;
+  },
+profissao() {
+    return this.nome + ' topografo';
+  }
+
 }
-
-console.log(frutas.toString());
-
-console.log(Object.prototype.toString.call(somar));
+const novo = Object.create(pessoa);
+console.log(novo.profissao());
